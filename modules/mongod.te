@@ -1,0 +1,11 @@
+
+module mongod 1.0;
+
+require {
+	type mongod_var_lib_t;
+	type mongod_t;
+	class file map;
+}
+
+#============= mongod_t ==============
+allow mongod_t mongod_var_lib_t:file map;
